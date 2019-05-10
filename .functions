@@ -1,5 +1,5 @@
 function dps() {
     local container_name
-    container_name=$(docker ps --format '\''table {{.ID}}\t{{.Names}}\t{{.Status}}\t{{.Ports}}'\' | fzf)
+    container_name=$(docker ps --format 'table {{.ID}}\t{{.Names}}\t{{.Status}}\t{{.Ports}}'| fzf)
     docker exec -e COLUMNS="`tput cols`" -e LINES="`tput lines`" -it "$container_name" /bin/bash
 }

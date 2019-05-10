@@ -70,6 +70,7 @@ plugins=(
 )
 
 source $ZSH/oh-my-zsh.sh
+source ~/dotfiles/scripts/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 
 # User configuration
 
