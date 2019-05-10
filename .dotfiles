@@ -1,0 +1,14 @@
+source ~/.aliases
+source ~/.exports
+source ~/.functions
+source ~/.plugins
+
+prv_files=".prv_aliases .prv_exports"
+
+for file in ${prv_files}; do
+    #if any private files, read them
+    if [[ -f ~/${file} ]]; then
+        echo "reading ${file}"
+        source ~/${file}
+    fi
+done
