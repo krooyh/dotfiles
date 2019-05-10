@@ -1,6 +1,10 @@
+echo "Reading aliases"
 source ~/.aliases
+echo "Reading exports"
 source ~/.exports
+echo "Reading functions"
 source ~/.functions
+echo "Reading plugins"
 source ~/.plugins
 
 prv_files=".prv_aliases .prv_exports"
