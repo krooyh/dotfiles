@@ -3,3 +3,9 @@ function dps() {
     container_name=$(dp | fzf | awk '{print $1}')
     docker exec -e COLUMNS="`tput cols`" -e LINES="`tput lines`" -it "$container_name" /bin/bash
 }
+
+#always ls after changing dir
+function chpwd() {
+    emulate -L zsh
+    ls -alh
+}
