@@ -1,18 +1,7 @@
-echo "Reading aliases"
 source ~/.aliases
-echo "Reading exports"
 source ~/.exports
-echo "Reading functions"
 source ~/.functions
-echo "Reading plugins"
 source ~/.plugins
 
-prv_files=".prv_aliases .prv_exports"
-
-for file in ${prv_files}; do
-    #if any private files, read them
-    if [[ -f ~/${file} ]]; then
-        echo "reading ${file}"
-        source ~/${file}
-    fi
-done
+test -f ~/.prv_aliases && source ~/.prv_aliases
+test -f ~/.prv_exports && source ~/.prv_exports
