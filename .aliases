@@ -1,5 +1,6 @@
 alias rmc="~/dotfiles/scripts/rmc.sh"
 alias dp="docker ps --format 'table {{.ID}}\t{{.Names}}\t{{.Status}}\t{{.Ports}}'"
+alias wdp="watch \"docker ps --format 'table {{.ID}}\t{{.Names}}\t{{.Status}}\t{{.Ports}}'\""
 alias ms="make stop"
 alias mb="make build"
 alias mct="make cli-tests"
