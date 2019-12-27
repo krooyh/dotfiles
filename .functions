@@ -4,6 +4,12 @@ function dps() {
     docker exec -e COLUMNS="`tput cols`" -e LINES="`tput lines`" -it "$container_name" /bin/bash
 }
 
+function dkc() {
+    local container_name
+    container_name=$(dp | fzf | awk '{print $1}')
+    docker kill "$container_name"
+}
+
 #always ls after changing dir
 function chpwd() {
     emulate -L zsh
