@@ -58,15 +58,7 @@ ZSH_THEME="agnoster"
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(
-  git
-  git-flow
-  docker
-  brew
-  composer
-  zsh-autosuggestions
-  zsh-syntax-highlighting
-)
+plugins=(git git-flow docker composer zsh-autosuggestions jump)
 
 source $ZSH/oh-my-zsh.sh
 source ~/dotfiles/scripts/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
@@ -99,6 +91,10 @@ export LANG=en_US.UTF-8
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
+
+[ -f /usr/local/etc/profile.d/autojump.sh ] && . /usr/local/etc/profile.d/autojump.sh
+
+set -o vi
 
 prompt_context() {
     if [[ "$USER" != "$DEFAULT_USER" || -n "$SSH_CLIENT" ]]; then

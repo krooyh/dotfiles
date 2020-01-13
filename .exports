@@ -1,4 +1,7 @@
 export SPHINXBUILD="/usr/local/opt/sphinx-doc/bin/sphinx-build"
 export PATH="$PATH:$HOME/.composer/vendor/bin"
 export PATH="$PATH:$HOME/homebrew/bin"
+export PATH="$PATH:/usr/local/share/python/"
 export TERM=xterm-256color
+$(dinghy shellinit)
+export HOMEBREW_GITHUB_API_TOKEN=8d0b71f00a01fc11f1c249a53abc57403b32235c
