@@ -10,3 +10,4 @@ alias redoc-down="docker rm -f -v redoc"
 alias fuck='sudo $(fc -nl -1)'
 alias glog="git lg"
 alias glogg="git lg2"
+alias lg="lazygit"

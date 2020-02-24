@@ -15,3 +15,24 @@ function chpwd() {
     emulate -L zsh
     ls -alh
 }
+
+function fmake() {
+    local subject
+    subject=$(egrep '^[a-zA-Z\-]+:{1}' Makefile | cut -d ':' -f 1 | fzf)
+    make "$subject"
+}
+
+function fcompup() {
+    local package
+    package=$(composer info -s | cut -d ' ' -f 1 | fzf)
+    composer update "$package"
+}
+
+function fcompreq() {
+    local package_full
+    local package
+    package_full=$(composer search $@ | fzf)
+    package=$(echo $package_full | cut -d ' ' -f 1)
+    echo "Installing $package package"
+    composer require "$package"
+}
