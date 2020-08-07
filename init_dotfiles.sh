@@ -1,7 +1,7 @@
 #!/bin/bash
 dir=~/dotfiles
 old_dir=~/dotfiles_old
-files=".aliases .dotfiles .exports .functions .plugins .tmux.conf .zshrc .gitconfig"
+files=".aliases .dotfiles .exports .functions .plugins .tmux.conf .zshrc .gitconfig .ideavimrc"
 
 cd ${dir}
 

@@ -1,0 +1,4 @@
+:set incsearch
+:set hlsearch
+:map <Space> :noh<cr>
+:vnoremap y "*y"

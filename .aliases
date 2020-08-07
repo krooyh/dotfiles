@@ -1,6 +1,6 @@
 alias rmc="~/dotfiles/scripts/rmc.sh"
 alias dp="docker ps --format 'table {{.ID}}\t{{.Names}}\t{{.Status}}\t{{.Ports}}'"
-alias wdp="watch \"docker ps --format 'table {{.ID}}\t{{.Names}}\t{{.Status}}\t{{.Ports}}'\""
+alias wdp="watch -t \"docker ps --format 'table {{.ID}}\t{{.Names}}\t{{.Status}}\t{{.Ports}}'\""
 alias ms="make stop"
 alias mb="make build"
 alias mct="make cli-tests"
@@ -11,3 +11,4 @@ alias fuck='sudo $(fc -nl -1)'
 alias glog="git lg"
 alias glogg="git lg2"
 alias lg="lazygit"
+alias dn="dnote"

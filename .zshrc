@@ -65,7 +65,7 @@ COMPLETION_WAITING_DOTS="true"
 # git clone https://github.com/djui/alias-tips.eit
 # git clone https://github.com/zdharma/fast-syntax-highlighting.git \
 #   ~ZSH_CUSTOM/plugins/fast-syntax-highlighting
-plugins=(git git-flow docker composer zsh-autosuggestions jump go alias-tips fast-syntax-highlighting)
+plugins=(git golang git-flow docker composer zsh-autosuggestions jump alias-tips fast-syntax-highlighting dnote)
 
 source $ZSH/oh-my-zsh.sh
 
