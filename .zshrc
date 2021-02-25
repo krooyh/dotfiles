@@ -115,3 +115,4 @@ prompt_dir() {
 
 source ~/.dotfiles
 #zprof
+fpath=($fpath $(brew --prefix)/share/gog-cli/fpath); compinit

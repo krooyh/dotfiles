@@ -2,3 +2,4 @@
 :set hlsearch
 :map <Space> :noh<cr>
 :vnoremap y "*y"
+:set relativenumber number
