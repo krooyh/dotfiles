@@ -65,7 +65,11 @@ COMPLETION_WAITING_DOTS="true"
 # git clone https://github.com/djui/alias-tips.eit
 # git clone https://github.com/zdharma/fast-syntax-highlighting.git \
 #   ~ZSH_CUSTOM/plugins/fast-syntax-highlighting
-plugins=(git golang git-flow docker composer zsh-autosuggestions jump alias-tips fast-syntax-highlighting dnote)
+# git clone https://github.com/zsh-users/zsh-completions ${ZSH_CUSTOM:=~/.oh-my-zsh/custom}/plugins/zsh-completions
+
+plugins=(git golang git-flow docker composer zsh-autosuggestions zsh-completions jump alias-tips fast-syntax-highlighting dnote)
+autoload -U compinit && compinit
+zstyle ':completion:*:*:make:*' tag-order 'targets'
 
 source $ZSH/oh-my-zsh.sh
 
@@ -110,7 +114,7 @@ prompt_context() {
 base_prompt='%{$fg[cyan]%}%0~%{$reset_color%}%{$fg[red]%}|%{$reset_color%}'
 
 prompt_dir() {
-  prompt_segment blue $CURRENT_FG '%2~'
+  prompt_segment cyan $CURRENT_FG '%2~'
 }
 
 source ~/.dotfiles

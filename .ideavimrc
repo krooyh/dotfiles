@@ -3,3 +3,4 @@
 :map <Space> :noh<cr>
 :vnoremap y "*y"
 :set relativenumber number
+:set sneak

@@ -10,8 +10,9 @@ export PATH="/Users/rkreusch/Library/Python/2.7/lib/python/site-packages/:$PATH"
 export TERM=xterm-256color
 export GOPATH=$HOME/go
 export PATH="$PATH:$GOPATH/bin"
+export JAVA_HOME=$(/usr/libexec/java_home)
 
-export DOCKER_HOST=tcp://192.168.99.102:2376
+export DOCKER_HOST=tcp://192.168.99.101:2376
 export DOCKER_CERT_PATH=/Users/rkreusch/.docker/machine/machines/dinghy
 export DOCKER_TLS_VERIFY=1
 export DOCKER_MACHINE_NAME=dinghy
