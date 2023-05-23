@@ -1,6 +1,6 @@
 [user]
-        name = Rafał Kreusch
-        email = rkreusch@gog.com
+	name = Rafał Kreusch
+	email = krooyh@gmail.com
 [alias]
 lg1 = log --graph --abbrev-commit --decorate --format=format:'%C(bold blue)%h%C(reset) - %C(bold dim green)(%ar)%C(reset) %C(white)%s%C(reset) %C(dim white)- %an%C(reset)%C(bold dim yellow)%d%C(reset)' --all
 lg2 = log --graph --abbrev-commit --decorate --format=format:'%C(bold blue)%h%C(reset) - %C(bold dim white)%aD%C(reset) %C(bold dim green)(%ar)%C(reset)%C(bold dim yellow)%d%C(reset)%n''          %C(white)%s%C(reset) %C(dim white)- %an%C(reset)' --all

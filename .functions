@@ -1,7 +1,7 @@
 function dps() {
     local container_name
     container_name=$(dp | fzf | awk '{print $1}')
-    docker exec -e COLUMNS="`tput cols`" -e LINES="`tput lines`" -it "$container_name" /bin/bash
+    docker exec -e COLUMNS="`tput cols`" -e LINES="`tput lines`" -it "$container_name" sh
 }
 
 function dkc() {
@@ -40,8 +40,4 @@ function fcompreq() {
 function fh() {
       print -z $( ([ -n "$ZSH_NAME"  ] && fc -l 1 || history) | fzf +s --tac | sed 's/ *[0-9]* *//' )
       
-}
-
-function blog_publish() {
-    docker run --rm -e "CONFLUENCE_BASIC_AUTH=$(echo $CONFLUENCE_BASIC_AUTH)" registry-gitlab.gog.com/galaxy-web/goglive-publisher:latest ./publish-post $1 $2
 }

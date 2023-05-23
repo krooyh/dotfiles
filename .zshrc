@@ -63,9 +63,9 @@ COMPLETION_WAITING_DOTS="true"
 # cd ${ZSH_CUSTOM1:-$ZSH/custom}/plugins
 #
 # git clone https://github.com/djui/alias-tips.eit
-# git clone https://github.com/zdharma/fast-syntax-highlighting.git \
-#   ~ZSH_CUSTOM/plugins/fast-syntax-highlighting
+# git clone https://github.com/zdharma-continuum/fast-syntax-highlighting.git ${ZSH_CUSTOM:-$HOME/.oh-my-zsh/custom}/plugins/fast-syntax-highlighting
 # git clone https://github.com/zsh-users/zsh-completions ${ZSH_CUSTOM:=~/.oh-my-zsh/custom}/plugins/zsh-completions
+# git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:=~/.oh-my-zsh/custom}/plugins/zsh-autosuggestions
 
 plugins=(git golang git-flow docker composer zsh-autosuggestions zsh-completions jump alias-tips fast-syntax-highlighting dnote)
 autoload -U compinit && compinit
