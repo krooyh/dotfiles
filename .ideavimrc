@@ -4,3 +4,14 @@
 :vnoremap y "*y"
 :set relativenumber number
 :set sneak
+
+:let mapleader=","
+:set easymotion
+":nnoremap <D-;> <Plug>(easymotion-prefix)
+:map <M-;> <Plug>(easymotion-prefix)
+
+:set NERDTree
+":nnoremap <D-l> :NERDTree<CR>
+:nnoremap <M-l> :NERDTree<CR>
+
+:set multiple-cursors
