@@ -7,8 +7,8 @@
 
 :let mapleader=","
 :set easymotion
-":nnoremap <D-;> <Plug>(easymotion-prefix)
-:map <M-;> <Plug>(easymotion-prefix)
+":nnoremap <D-;> <Plug>(easymotion-bd-f)
+:map <M-;> <Plug>(easymotion-bd-f)
 
 :set NERDTree
 ":nnoremap <D-l> :NERDTree<CR>
