@@ -1,12 +1,6 @@
 alias rmc="~/dotfiles/scripts/rmc.sh"
 alias dp="docker ps --format 'table {{.ID}}\t{{.Names}}\t{{.Status}}\t{{.Ports}}'"
 alias wdp="watch -t \"docker ps --format 'table {{.ID}}\t{{.Names}}\t{{.Status}}\t{{.Ports}}'\""
-alias ms="make stop"
-alias mb="make build"
-alias mct="make cli-tests"
-alias mst="make stop-tests"
-alias mit="make init-tests"
-alias redoc-down="docker rm -f -v redoc"
 alias fuck='sudo $(fc -nl -1)'
 alias glog="git lg"
 alias glogg="git lg2"
