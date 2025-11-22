@@ -12,6 +12,6 @@
 
 :set NERDTree
 ":nnoremap <D-l> :NERDTree<CR>
-:nnoremap <M-l> :NERDTree<CR>
+":nnoremap <M-l> :NERDTree<CR>
 
 :set multiple-cursors

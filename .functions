@@ -1,7 +1,7 @@
 function dps() {
     local container_name
     container_name=$(dp | fzf | awk '{print $1}')
-    docker exec -e COLUMNS="`tput cols`" -e LINES="`tput lines`" -it "$container_name" sh
+    docker exec -e COLUMNS="`tput cols`" -e LINES="`tput lines`" -it "$container_name" /bin/bash
 }
 
 function dkc() {

@@ -7,3 +7,5 @@ lg2 = log --graph --abbrev-commit --decorate --format=format:'%C(bold blue)%h%C(
 lg = !"git lg1"
 [credential]
 	helper = store
+[core]
+	autocrlf = input
